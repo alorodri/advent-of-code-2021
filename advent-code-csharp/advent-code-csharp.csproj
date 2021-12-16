@@ -6,6 +6,8 @@
     <RootNamespace>advent_code_csharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <StartupObject>advent_code_csharp.Problem3</StartupObject>
   </PropertyGroup>
 
 </Project>

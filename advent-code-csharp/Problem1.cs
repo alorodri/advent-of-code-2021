@@ -9,14 +9,12 @@ namespace advent_code_csharp
 {
     public class Problem1
     {
-        static readonly string EXAMPLE_FILE = "../../../exampleProblem1.txt";
-        static readonly string INPUT_FILE = "../../../inputProblem1.txt";
         static readonly int INCREMENTS = 3;
         public static void Main(string[] args)
         {
             Stopwatch watch = new();
             watch.Start();
-            int[] lines = Int32CastStringArray(File.ReadAllLines(INPUT_FILE));
+            int[] lines = Int32CastStringArray(File.ReadAllLines(FileUtils.GetFileUrl(Type.INPUT, 1)));
             int totalIncrements = 0;
             for (int i = 0; i < lines.Length; i++)
             {
