@@ -29,6 +29,7 @@ namespace advent_code_csharp
 
         private static void SanitizeFile(in string url)
         {
+            Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
             Regex trimBetweenRegex = new Regex(@" +");
             File.WriteAllText(url, trimBetweenRegex.Replace(File.ReadAllText(url), @" "));
             string[] lines = File.ReadAllLines(url);
